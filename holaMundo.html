@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer página</title>
+    <style>
+        table#tabla2 th, table#tabla2 td {
+            border: dashed 2px rgba(59, 102, 115, 0.602);
+        }
+    </style>
 </head>
 <body>
     <h1>Encabezado 1</h1>
@@ -76,12 +81,69 @@
     </dl>
 
     <h2>Formularios</h2>
-    <form>
+    <form action="#">
+        <h3>Datos básicos</h3>
         Nombre: <input type="text" required> <br>
         Edad: <input type="number" min="0" max="120" step="2"> <br>
         Correo: <input type="email" required> <br>
+        Contraseña: <input type="password" name="password" placeholder="123456"> <br>
         Fecha de nacimiento: <input type="date"> <br>
+
+        <h3>Genero</h3>
+        Hombre: <input type="radio" name="genero"> <br>
+        Mujer: <input type="radio" name="genero"> <br>
+        Otro: <input type="radio" name="genero"> <br>
+        Ninguno <input type="radio" name="genero"> <br>
+        Me incomoda la pregunta: <input type="radio" name="genero" checked> <br>
+
+        <h3>Medio de transporte</h3>
+        Automóvil: <input type="checkbox" name="transporte" checked> <br>
+        Motocicleta: <input type="checkbox" name="transporte"> <br>
+        Transporte público: <input type="checkbox" name="transporte"> <br>
+        Peatón: <input type="checkbox" name="transporte"> <br>
+        Bicicleta: <input type="checkbox" name="transporte"> <br>
+
+        <h3>Varios</h3>
+        Color favorito: <input type="color" name="colorFavorito"> <br>
+        Selfie: <input type="file"> <br>
+        Input oculto: <input type="hidden"> <br>
+        ¿Que tan feliz me siento hoy?: <input type="range" name="feliz" min="0" max="10" step="1" value="1"> <br>
+        Mes favorito: <input type="month" name="mes"> <br>
+        
         <input type="submit">
     </form>
+
+    <h2>Tablas</h2>
+    <h3>Tabla encuerada</h3>
+    <table>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Campo 1</td>
+            <td>Campo 2</td>
+        </tr>
+        <tr>
+            <td>Campo 3</td>
+            <td>Campo 4</td>
+        </tr>
+    </table>
+
+    <h3>Tabla con Emmet</h3>
+    <table id="tabla2">
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Campo 1</td>
+            <td>Campo 2</td>
+        </tr>
+        <tr>
+            <td>Campo 1</td>
+            <td>Campo 2</td>
+        </tr>
+    </table>
 </body>
 </html>
