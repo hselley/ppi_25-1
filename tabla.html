@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloTabla.css">
+    <title>Estilo en tablas</title>
+    <style>
+        /* Estilo para la primer tabla */ 
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding: 15px;
+        }
+
+        /* Estilo para la tercer tabla */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla con estilo</h1>
+    <h2>Primer tabla</h2>
+    <table>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td>Elemento 1</td>
+            <td>Elemento 2</td>
+            <td>Elemento 3</td>
+        </tr>
+        <tr>
+            <td>Elemento 1</td>
+            <td>Elemento 2</td>
+            <td>Elemento 3</td>
+        </tr>
+        <tr>
+            <td>Elemento 1</td>
+            <td>Elemento 2</td>
+            <td>Elemento 3</td>
+        </tr>
+    </table>
+
+    <h2>Segunda tabla</h2>
+    <table id="consolas">
+        <tr>
+            <th>Generación</th>
+            <th>Nintendo</th>
+            <th>Sega</th>
+            <th>Sony</th>
+            <th>Microsoft</th>
+        </tr>
+        <tr class="renglon1">
+            <td>5</td>
+            <td>Nintendo 64</td>
+            <td>Saturn</td>
+            <td>Playstation</td>
+            <td></td>
+        </tr>
+        <tr class="renglon2">
+            <td>6</td>
+            <td>Game Cube</td>
+            <td>Dreamcast</td>
+            <td>Playstation 2</td>
+            <td style="color: green">XBOX</td>
+        </tr>
+        <tr class="renglon1">
+            <td>7</td>
+            <td>Wii</td>
+            <td></td>
+            <td>Playstation 3</td>
+            <td>XBOX 360</td>
+        </tr>
+        <tr class="renglon2">
+            <td>8</td>
+            <td>WiiU</td>
+            <td></td>
+            <td>Playstation 4</td>
+            <td>XBOX One</td>
+        </tr>
+        <tr class="renglon1">
+            <td>9</td>
+            <td>Nintendo Switch</td>
+            <td></td>
+            <td>Playstation 5</td>
+            <td>XBOX Series S/X</td>
+        </tr>
+    </table>
+
+    <h2>Tabla responsiva</h2>
+    <div style="overflow-x:auto;">
+        <table>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+            <td>67</td>
+          </tr>
+        </table>
+      </div>
+    
+</body>
+</html>

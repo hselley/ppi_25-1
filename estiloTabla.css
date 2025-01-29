@@ -1,0 +1,31 @@
+/* Estilo para la segunda tabla */
+#consolas {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 60%;
+    border-collapse: collapse;
+    text-align: center;
+}
+#consolas td, #consolas th {
+    font-size: 1.1em;
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
+}
+#consolas th {
+    font-size: 1em;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #A7C942;
+    color: #ffffff;
+}
+#consolas tr.renglon1 td {
+    color: #000000;
+    background-color: #EAF2D3;
+}
+#consolas tr.renglon2 td {
+    color: #000000;
+    background-color: white;
+}
+tr:hover {
+    background-color: #cc06e2;
+}
