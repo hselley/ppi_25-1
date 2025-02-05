@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie de ULAM</title>
+    <script>
+        function obtenerNumero() {
+            var valor = document.getElementById("numero").value
+            var x = parseInt(valor)
+            console.log(typeof(x))
+
+            var y = ulam(x)
+        }        
+
+        function ulam(x) {
+            var salida = ""
+            while(x != 1) {
+                if(x%2==0) {
+                    x /= 2
+                } else {
+                    x = 3*x+1
+                } 
+                console.log(x)
+                salida = salida + "<br>" + x
+                document.getElementById("resultado").innerHTML = salida
+            }
+        }
+
+        function borrar() {
+            document.getElementById("numero").value = 0
+            document.getElementById("resultado").innerHTML = ""
+        }
+    </script>
+</head>
+<body>
+    <h1>Serie de ULAM</h1>
+    <p>Ingrese un numero positivo</p>
+    <form>
+        <input type="number" id="numero">
+    </form>
+    <button onclick="obtenerNumero()">Calcular</button>
+    <button onclick="borrar()">Borrar</button>
+    <p id="resultado"></p>
+</body>
+</html>

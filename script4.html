@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <html lang="es">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function cambiarImagen() {
+            element = document.getElementById('miImagen')
+            if (element.src.match("bulbon")) {
+              element.src="pic_bulboff.gif";
+            }
+            else {
+              element.src="pic_bulbon.gif";
+            }
+        }
+    </script>
+  </head>
+<body>
+    <img id="miImagen" onclick="cambiarImagen()" src="pic_bulboff.gif" width="100" height="180">
+    <p>Presione para encender o apagar.</p>
+</body>
+</html>
