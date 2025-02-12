@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de videojuegos</title>
+    <link rel="stylesheet" href="estiloVideojuegos.css">
+    <script src="registroVideojuegos.js"></script>
+</head>
+<body>
+    <h1>Registro de videojuegos</h1>
+    <p>Ingrese los datos de su vieojuego</p>
+    <form>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre"> <br>
+        <label for="pub">Publisher: </label>
+        <input type="text" name="pub" id="pub"> <br>
+        <h3>Consola:</h3>
+        <input type="checkbox" name="consola" id="xbox"> 
+        <label for="xbox">XBox Series S/X</label> <br>
+        <input type="checkbox" name="consola" id="swicth"> 
+        <label for="switch">Nintendo Switch</label> <br>
+        <input type="checkbox" name="consola" id="ps5"> 
+        <label for="ps5">PlayStation 5</label>
+        <h3>Fecha de lanzamiento: </h3>
+        <label for="fecha"></label>
+        <input type="date" name="fecha" id="fecha"> <br>
+    </form>
+    <button onclick="registrar()">Registrar juego</button>
+    <h2>Registro</h2>
+    <table id="consolas"></table>
+</body>
+</html>
