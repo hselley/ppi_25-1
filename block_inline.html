@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos en bloque y en línea</title>
+    <style>
+        img.bloque {
+            display: none;
+        }
+        img.visibilidad {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos en bloque</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita debitis quibusdam soluta, sunt tenetur ipsa sequi placeat ad temporibus consectetur pariatur earum et aliquam quos sapiente atque nesciunt reprehenderit rerum.</p>
+
+    <h1>Elementos en línea</h1>
+    
+    <img src="klematis_small.jpg" alt="Flor">
+    
+    <img src="klematis2_small.jpg" alt="Flor 2">
+    
+    <img src="klematis3_small.jpg" alt="Flor 3">
+    
+    <img src="klematis4_small.jpg" alt="Flor 4">
+
+    <h1>img en div</h1>
+    <div><img src="klematis_small.jpg" alt="Flor"></div>
+    <div><img src="klematis2_small.jpg" alt="Flor"></div>
+
+    <h1>img modificando propiedad display</h1>
+    <p>Foto 1 con display none</p>
+    <img src="klematis_small.jpg" alt="" class="bloque">
+    <p>Foto 1 con visibility hidden</p>
+    <img src="klematis_small.jpg" alt="" class="visibilidad">
+    <p>Foto 2 con display none</p>
+    <img src="klematis2_small.jpg" alt="" class="bloque">
+    <p>Foto 2 con visibility hidden</p>
+    <img src="klematis2_small.jpg" alt="" class="visibilidad">
+</body>
+</html>
