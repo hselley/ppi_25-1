@@ -8,11 +8,12 @@
 <body>
     <h1>Registro exitoso</h1>
     <?php
-        $con = mysqli_connect("localhost", "geeker", "selley", "prueba");
+        $con = new mysqli("localhost", "geeker", "", "prueba");
 
         // Check connection
-        if (mysqli_connect_errno()) {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        if ($con -> connect_errno) {
+            echo "<p>Failed to connect to MySQL: " . $con -> connect_error . "</p>";
+            exit();
         }
 
         // escape variables for security
@@ -24,6 +25,7 @@
         VALUES ('$firstname', '$lastname', '$age');";
 
         if (!mysqli_query($con,$sql)) {
+            echo "<p>No se pudo realizar el Query</p>";
             die('Error: ' . mysqli_error($con));
         }
         echo "<p>Se registró el usuario exitosamente</p>";
